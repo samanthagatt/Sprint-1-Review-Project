@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OKg-OE-mx2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add new movie list-->
+        <scene sceneID="RmQ-n6-Yvk">
+            <objects>
+                <viewController id="OKg-OE-mx2" customClass="AddListViewController" customModule="Movie_Lists" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uce-gm-siT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="List name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AHw-N5-3ey">
+                                <rect key="frame" x="16" y="73" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKp-KB-E16">
+                                <rect key="frame" x="161" y="111" width="52" height="30"/>
+                                <state key="normal" title="Add list"/>
+                                <connections>
+                                    <segue destination="7tE-hm-7Ul" kind="show" id="f2o-Sb-VNH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AHw-N5-3ey" firstAttribute="leading" secondItem="Uce-gm-siT" secondAttribute="leadingMargin" id="1sL-SM-E9R"/>
+                            <constraint firstItem="AHw-N5-3ey" firstAttribute="centerX" secondItem="aKp-KB-E16" secondAttribute="centerX" id="DbG-2t-Ulq"/>
+                            <constraint firstItem="aKp-KB-E16" firstAttribute="top" secondItem="AHw-N5-3ey" secondAttribute="bottom" constant="8" symbolic="YES" id="ECK-lE-aHU"/>
+                            <constraint firstItem="AHw-N5-3ey" firstAttribute="top" secondItem="oaP-jZ-Jcu" secondAttribute="top" constant="53" id="UQf-qK-ipr"/>
+                            <constraint firstItem="AHw-N5-3ey" firstAttribute="trailing" secondItem="Uce-gm-siT" secondAttribute="trailingMargin" id="kIr-Nh-MPF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oaP-jZ-Jcu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add new movie list" id="gpN-p2-U3F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVF-4a-CCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.8" y="1055.6221889055473"/>
+        </scene>
+        <!--AddMovie-->
+        <scene sceneID="goC-nE-9Xt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddMovie" id="7tE-hm-7Ul" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWc-xQ-3OD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="1055"/>
+        </scene>
+    </scenes>
+</document>
