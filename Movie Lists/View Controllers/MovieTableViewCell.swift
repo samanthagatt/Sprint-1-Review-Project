@@ -21,4 +21,11 @@ class MovieTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func isSeenButtonTapped(_ sender: Any) {
+        
+    }
+    
+    @IBOutlet weak var isSeenButton: UIButton!
+    @IBOutlet weak var movieTitleLabel: UILabel!
+    
 }

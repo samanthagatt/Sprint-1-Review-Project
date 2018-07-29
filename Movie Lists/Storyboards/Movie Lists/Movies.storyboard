@@ -35,6 +35,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycv-PM-nxh">
                                             <rect key="frame" x="297" y="8" width="62" height="30"/>
                                             <state key="normal" title="Not seen"/>
+                                            <connections>
+                                                <action selector="isSeenButtonTapped:" destination="hOx-hi-SwV" eventType="touchUpInside" id="k8L-ku-x2V"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -44,6 +47,10 @@
                                         <constraint firstItem="ycv-PM-nxh" firstAttribute="trailing" secondItem="rmV-0q-Jqx" secondAttribute="trailingMargin" id="fpx-3I-G4e"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="isSeenButton" destination="ycv-PM-nxh" id="u6g-dd-Uv3"/>
+                                    <outlet property="movieTitleLabel" destination="ceL-Ly-rKL" id="r7N-uW-sDG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

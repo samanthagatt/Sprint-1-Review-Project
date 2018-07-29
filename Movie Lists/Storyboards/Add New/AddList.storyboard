@@ -29,6 +29,7 @@
                                 <rect key="frame" x="161" y="155" width="52" height="30"/>
                                 <state key="normal" title="Add list"/>
                                 <connections>
+                                    <action selector="addListButtonTapped:" destination="OKg-OE-mx2" eventType="touchUpInside" id="z2k-uv-coX"/>
                                     <segue destination="7tE-hm-7Ul" kind="show" id="f2o-Sb-VNH"/>
                                 </connections>
                             </button>
@@ -45,6 +46,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add new movie list" id="1yq-j8-0cO"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="listNameTextField" destination="AHw-N5-3ey" id="OFz-tm-kPa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVF-4a-CCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

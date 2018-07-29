@@ -18,11 +18,6 @@ class AddListViewController: UIViewController, MovieListControllerProtocol {
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
     /*
@@ -35,5 +30,12 @@ class AddListViewController: UIViewController, MovieListControllerProtocol {
     }
     */
 
+    
+    @IBAction func addListButtonTapped(_ sender: Any) {
+        
+    }
+    
+    @IBOutlet weak var listNameTextField: UITextField!
+    
     var movieListController: MovieListController?
 }
