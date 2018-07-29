@@ -47,7 +47,7 @@
                     <navigationItem key="navigationItem" title="Movie Lists" id="GhJ-IY-Tjs">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="D2o-jQ-Rki">
                             <connections>
-                                <segue destination="rRp-CA-tCJ" kind="show" id="JOi-gx-A6r"/>
+                                <segue destination="rRp-CA-tCJ" kind="show" identifier="ShowAddListFromTable" id="JOi-gx-A6r"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

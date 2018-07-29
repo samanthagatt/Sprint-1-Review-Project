@@ -10,5 +10,7 @@ import Foundation
 
 struct MovieList {
     var name: String
-    var moviesInList: [Movie]
+    var moviesInList: MovieController
+    // I should make this of type MovieController instead of just an array of Movie's
+    // var moviesInList: [Movie]
 }

@@ -61,7 +61,7 @@
                     <navigationItem key="navigationItem" title="Movies in" id="QJ7-WG-Nu0">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="o1p-WV-6At">
                             <connections>
-                                <segue destination="OJZ-NM-cb4" kind="show" id="aIS-E6-Lx8"/>
+                                <segue destination="OJZ-NM-cb4" kind="show" identifier="ShowAddMovieFromTable" id="aIS-E6-Lx8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

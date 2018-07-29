@@ -15,4 +15,11 @@ class MovieListController {
         let movieList = MovieList(name: name, moviesInList: moviesInList)
         movieLists?.append(movieList)
     }
+    
+//    func addMovieToList(list: MovieList, movie: Movie) {
+//        var movieList = list
+//        movieList.moviesInList.append(movie)
+//
+//
+//    }
 }

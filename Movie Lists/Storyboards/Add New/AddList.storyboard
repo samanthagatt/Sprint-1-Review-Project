@@ -30,7 +30,7 @@
                                 <state key="normal" title="Add list"/>
                                 <connections>
                                     <action selector="addListButtonTapped:" destination="OKg-OE-mx2" eventType="touchUpInside" id="z2k-uv-coX"/>
-                                    <segue destination="7tE-hm-7Ul" kind="show" id="f2o-Sb-VNH"/>
+                                    <segue destination="7tE-hm-7Ul" kind="show" identifier="ShowAddMovie" id="f2o-Sb-VNH"/>
                                 </connections>
                             </button>
                         </subviews>
