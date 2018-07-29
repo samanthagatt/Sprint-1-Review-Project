@@ -13,20 +13,26 @@ class MovieListsTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        passMovieListsToChildrenVCs()
     }
 
     
     func passMovieListsToChildrenVCs() {
         
-        /*
-        for naviVC in self.viewControllers {
-            if naviVC as? UINavigationController {
-                for childVC in naviVC {
-                    if childVC as? 
-                }
+        guard let vcs = self.viewControllers else { return }
+        
+        for vc in vcs {
+            guard let naviVC = vc as? UINavigationController else { return }
+            // naviVC.viewControllers returns an array of all the view controllers in the navi stack
+            let childVCs = naviVC.viewControllers
+            
+            for childVC in childVCs {
+                guard var conformingChildVC = childVC as? MovieListControllerProtocol else { return }
+                
+                conformingChildVC.movieListController = movieListController
             }
         }
-        */
     }
+    
+    let movieListController = MovieListController()
 }
