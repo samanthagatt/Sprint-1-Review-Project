@@ -17,7 +17,16 @@ class MovieListsTabBarViewController: UITabBarController {
     }
 
     
-    
-    
-
+    func passMovieListsToChildrenVCs() {
+        
+        /*
+        for naviVC in self.viewControllers {
+            if naviVC as? UINavigationController {
+                for childVC in naviVC {
+                    if childVC as? 
+                }
+            }
+        }
+        */
+    }
 }

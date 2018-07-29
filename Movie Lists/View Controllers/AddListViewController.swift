@@ -8,7 +8,10 @@
 
 import UIKit
 
-class AddListViewController: UIViewController {
+class AddListViewController: UIViewController, MovieListControllerProtocol {
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,4 +35,5 @@ class AddListViewController: UIViewController {
     }
     */
 
+    var movieListController: MovieListController?
 }

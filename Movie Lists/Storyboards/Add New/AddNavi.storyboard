@@ -9,10 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Add New-->
         <scene sceneID="xBo-5y-ynp">
             <objects>
                 <navigationController id="E4a-6y-qzX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Add New" image="Plus" id="kEt-eo-Qsa"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="25I-7o-FjP">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -36,4 +38,7 @@
             <point key="canvasLocation" x="-132" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Plus" width="28" height="28"/>
+    </resources>
 </document>

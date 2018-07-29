@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListsTableViewController: UITableViewController {
+class ListsTableViewController: UITableViewController, MovieListControllerProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,4 +92,5 @@ class ListsTableViewController: UITableViewController {
     }
     */
 
+    var movieListController: MovieListController?
 }

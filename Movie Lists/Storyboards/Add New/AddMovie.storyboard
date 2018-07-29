@@ -6,11 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Add Movie View Controller-->
+        <!--Add movie to-->
         <scene sceneID="Phr-tI-DSw">
             <objects>
                 <viewController id="uCf-v4-3PC" customClass="AddMovieViewController" customModule="Movie_Lists" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,22 +19,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CLw-fM-X8r">
-                                <rect key="frame" x="16" y="139" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CLw-fM-X8r">
+                                <rect key="frame" x="16" y="117" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRm-m7-UCJ">
-                                <rect key="frame" x="164" y="177" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRm-m7-UCJ">
+                                <rect key="frame" x="164" y="155" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CLw-fM-X8r" firstAttribute="trailing" secondItem="ZgL-eA-PWI" secondAttribute="trailingMargin" id="6EF-1J-Eep"/>
+                            <constraint firstItem="CLw-fM-X8r" firstAttribute="centerX" secondItem="HRm-m7-UCJ" secondAttribute="centerX" id="Tau-6c-g3W"/>
+                            <constraint firstItem="HRm-m7-UCJ" firstAttribute="top" secondItem="CLw-fM-X8r" secondAttribute="bottom" constant="8" symbolic="YES" id="glU-h8-lqH"/>
+                            <constraint firstItem="CLw-fM-X8r" firstAttribute="leading" secondItem="ZgL-eA-PWI" secondAttribute="leadingMargin" id="hMC-19-NGU"/>
+                            <constraint firstItem="CLw-fM-X8r" firstAttribute="top" secondItem="7Qa-ms-tcU" secondAttribute="top" constant="53" id="k9C-pa-uaM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7Qa-ms-tcU"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Add movie to" id="J5C-Te-vQw"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scc-Xa-gO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
