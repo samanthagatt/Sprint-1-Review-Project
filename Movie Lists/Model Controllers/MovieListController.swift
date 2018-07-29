@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class MovieListController {
+    var movieLists: [MovieList]?
+    
+    func addMovieList(name: String, moviesInList: [Movie]) {
+        let movieList = MovieList(name: name, moviesInList: moviesInList)
+        movieLists?.append(movieList)
+    }
+}

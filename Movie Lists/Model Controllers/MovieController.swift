@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class MovieController {
+    
+    var movies: [Movie]?
+    
+    func addMovie(title: String) {
+        let movie = Movie(title: title, isSeen: false)
+        
+        movies?.append(movie)
+    }
+}
